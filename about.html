@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="shortcut icon" href="faco_high_resolution_-_Copy-removebg-preview.png" type="image/x-icon">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+<style>
+    * {
+	padding:0;
+	margin:0;
+	font-family: sans-serif;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+.medsos {
+	padding:5px 0;
+	background-color:#3a6cf4;
+}
+.medsos ul li {
+	display: inline-block;
+	color: #fff;
+	margin-right: 10px;
+}
+.container {
+	width:80%;
+	margin:0 auto;
+}
+.container:after {
+	content:'';
+	display: block;
+	clear: both;
+}
+header h1 {
+	float: left;
+	padding:15px 0;
+	color: #3a6cf4;
+}
+header ul {
+	float: right;
+}
+header ul li {
+	display: inline-block;
+}
+header ul li a {
+	padding:25px 20px;
+	display: inline-block;
+}
+header ul li a:hover {
+	background-color: #3a6cf4;
+	color: #fff;
+}
+.active {
+	background-color: #3a6cf4;
+	color: #fff;
+}
+.banner {
+	height: 60vh;
+	background-image: url(hero-bg.jpg);
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner:after {
+	content:'';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #3a6cf4;
+}
+.banner h2 {
+	color: #fff;
+	z-index: 1;
+	padding: 20px 25px;
+	border:3px solid #fff;
+}
+section {
+	padding:50px 0;
+}
+section h3 {
+	text-align: center;
+	padding:20px 0;
+	color:#3a6cf4;
+	margin-bottom: 25px;
+}
+.about,
+.service {
+	padding-bottom: 100px;
+}
+.about p {
+	color: #666;
+	word-spacing: 2px;
+	line-height: 25px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.about h5{
+	color: #666;
+	word-spacing: 2px;
+	line-height: 25px;
+	margin-bottom: 20px;
+	font-size: 14px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.service {
+	background-color: #3a6cf4;
+}
+.box {
+	color: #3a6cf4;
+}
+.box:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.box .col-4 {
+	width:20%;
+	padding:20px;
+	box-sizing: border-box;
+	text-align: center;
+	float: left;
+}
+.icon {
+	width:70px;
+	height:70px;
+	border:1px solid;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 70px;
+	font-size: 20px;
+	margin:0 auto;
+}
+.box .col-4 h4 {
+	margin:20px 0;
+}
+
+.bg-loader {
+	background-color: #eee;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.bg-loader .loader {
+	width:50px;
+	height: 50px;
+	border:3px solid #fff;
+	border-radius: 100%;
+	border-top-color: #3a6cf4;
+	border-right-color: #3a6cf4;
+	border-bottom-color: #3a6cf4;
+	animation: puterin .8s linear infinite;
+}
+
+h2{
+	text-align: left;
+	margin-left: 10px;
+	font-family: monospace;
+}
+img{ 
+    width:500px;
+    height: 300px;
+    display: block;
+    border-radius: 50px;
+}
+.btn {
+  color: #fff;
+  background: #3a6cf4;
+  font-size: 1em;
+  font-weight: 600;
+  display: inline-block;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  margin-top: 30px;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  background: #235bf6;
+}
+
+@keyframes puterin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@media screen and (max-width: 768px){
+	.container {
+		width:90%;
+	}
+	header h1 {
+		text-align: center;
+		float: none;
+	}
+	header ul {
+		text-align: center;
+		float: none;
+	}
+	.box .col-4 {
+		width:100%;
+		float: none;
+		margin-bottom: 20px;
+	}
+}
+</style>
+<body>
+	<!-- loader -->
+	<div class="bg-loader">
+		<div class="loader"></div>
+	</div>
+
+	<!-- header -->
+	<div class="medsos">
+		<div class="container">
+			<ul>
+				<li><a href="https://id.linkedin.com/company/pt-faco-global-engineering"><i class="fab fa-linkedin"></i></a></li>
+				<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+				<li><a href="https://instagram.com/facoglobal_official?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a></li>
+			</ul>
+		</div>
+	</div>
+	<header>
+		<div class="container">
+			<h1><a href="index.html">PT.FACO GLOBAL ENGINEERING</a></h1>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="ficilities.html">FACILITIES</a></li>
+                <li ><a href="csr.html">CSR</a></li>
+				<li><a href="service.html">SERVICE</a></li>
+			</ul>
+		</div>
+	</header>
+			<h2>Home / About</h2>
+	<!-- about -->
+	<section class="about">
+		<div class="container">
+			<img src="faco high resolution - Copy.png" width="100%"> 
+			<h3>COMPANY PROFILE</h3>
+			<p><strong>WE ARE DIFFERENT</strong> We proudly provide quality solutions that are fully developed and tested in the Indonesia
+            We very thanked to a friend and partners that always help in company goal achievement, we realize still many things required to be finished, either form develop worker mentality and professionalism in facing globalization and competition that are so tightening for a period of now. <br><br>       
+            We believe with offer the very best goods and services to satisfy customer needs, build tecnical expertise, realize changes and strive for consistent growth, contributing to creating a better society and environment, with a firm awareness of our social responsibility, and the last aim to provide useful and safe product and services include quality and cost. <br><br>       
+            We respect the rights of all individuals and will endeavor to make our workplaces safe, sound and energetic, strive to respect the personality and individuality of our employess and support their profesional development and career to enable self realization     
+            We will work hard to harmonize with the community and society in order to develop our business even more. And aim to obtain encouraging informality and open in communications at all levels.</p>
+			</p>
+			<h3>Story Company</h3>
+			<img src="img\download (1).png"><br>
+			<h5>2004 Established PT. CIPTA SERASI as Machining <br>
+				2005 Established Plant 1<br>
+				2007 Established Plant 2<br>
+				2008 Established Plant 3 Started Power Energy (Transformer Tank)<br>
+				Obtaining ISO Certification 9001:2008<br>
+				2009 Started Oil & Gas (Pumping Unit Product)<br>
+				2010 Started Waste Management Product Established Plant 4<br>
+				2011 Mergered with PT. SKAS (Sumber Karya Sentana) Established as PT. FGE ( Faco Global Engineering)<br>
+				2012 Established Plant 6<br>
+				2015 Established Plant 7<br>
+				2017 Established Plant Jombang (Surabaya, East Java)<br>
+				2021<br>
+				2022 Planning for build Plant Indramayu (West Java) Established Plant Subang/ Indramayu (West Java)<br></h5>
+			<h3>Company Policy</h3>
+			<p>PT. Faco Global Engineering is steel fabrication and engineering company who is committed to be a global company in 2020 through continuously prioritizing in safety, producing high quality product, and developing human capital while complying on customer requirement, quality management system enviromental and regulation.
+                Faco offer some steel fabrication and manufacturing service to ensure optimum performance. Our experiences produce custom product form customer. Faco in produce of customer custom product according to many      
+                <h5>Standard such as: <br>             
+                1.AWS D1.1 <br>
+                2.ASME Sec VIII DIV-1 <br>
+                3.API <br>
+                4.BS. EN ISO-12079-1 & DNV 2.7.1 <br></h5>
+            </p>
+			<h3>Quality Objective</h3>
+			<p><h5>1.Memberikan layanan terbaik melalui prestasi yang berkualitas (Provide services through quality performance) <br>
+                2.Peduli terhadap kelestarian lingkungan serta mengutamakan keselamatan dan kesehatan kerja (Aware of environtmental sustainability and prioritizing the work safety and health)<br>
+                3.Ciptakan nilai tambah, kepuasan dan manfaat terbaik secara terus menerus kepada konsumen (Create value -added, satisfaction, and the best benefits to consumers continously)<br>
+                4.Menciptakan citra terbaik bagi perusahaan (Creating the best image for the company)<br>
+                5.Melakukan pengembangan dan perbaikan sistem secara berkesinambungan (Do and repair systems sustainable developtment )<br></h5>
+            </p>
+            <h3>Vision & Mission</h3>
+            <p>Become the leading metal fabrication & Engineering company in Indonesia able to compete in the global market <br>
+               <h5> 1.Focus on providing the best service to customers <br>
+                2.Creating  added value, satisfaction and the best benefits to customer <br>
+                3.Care  for environment sustainability and contribute  to society<br>
+                4.Prioritizing occupational safety and health in every  company activity<br>
+                5.Build a positive company image through responsible company  operations and continue to develop continuous improvements<br></h5>
+            </p>			
+		</div>
+		</div>
+        <center><a href="index.html" class="btn">Back</a></center> 
+	</section>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".bg-loader").hide();
+		})
+	</script>
+</body>
+</html>
